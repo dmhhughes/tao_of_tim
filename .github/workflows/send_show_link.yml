@@ -17,6 +17,9 @@ jobs:
          with:
            r-version: '4.4.3'
 
+      -  name: Gather dependencies
+         uses: r-lib/actions/setup-r-dependencies@v2
+
       -  name: Set up renv
          uses: r-lib/actions/setup-renv@v2
 
