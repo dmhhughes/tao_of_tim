@@ -19,7 +19,7 @@ telegram_message <- paste0(
   " Here's the show link: ", 
   "[", sample_show_link$link_title, "]", "(", sample_show_link$link_url, ")")
 
-bot <- telegram.bot::Bot(token = telegram.bot::bot_token("tim_tao_bot"))
+bot <- telegram.bot::Bot(token = Sys.getenv("R_TELEGRAM_BOT_tim_tao_bot"))
 
 bot$sendMessage(
   Sys.getenv("TELEGRAM_PERSONAL_ID"), 
