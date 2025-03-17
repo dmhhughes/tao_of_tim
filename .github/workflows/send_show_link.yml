@@ -25,7 +25,7 @@ jobs:
          uses: r-lib/actions/setup-renv@v2
 
       -  name: Run send_telegram
-         run: R/send_telegram.R
+         run: Rscript -e 'source("R/send_telegram.R")'
          env:
            API_KEY: ${{ secrets.R_TELEGRAM_BOT_TIM_TAO_BOT }}
            ID:      ${{ secrets.TELEGRAM_PERSONAL_ID }}
