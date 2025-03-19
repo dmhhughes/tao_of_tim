@@ -28,5 +28,5 @@ jobs:
          run: Rscript -e 'source("R/send_telegram.R")'
          env:
            R_TELEGRAM_BOT_TIM_TAO_BOT: ${{ secrets.R_TELEGRAM_BOT_TIM_TAO_BOT }}
-           TELEGRAM_PERSONAL_ID:      ${{ secrets.TELEGRAM_PERSONAL_ID }}
+           TELEGRAM_CHANNEL_ID:      ${{ secrets.TELEGRAM_CHANNEL_ID }}
       
