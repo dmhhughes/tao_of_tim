@@ -14,7 +14,7 @@ sample_show_link <- show_links_df |>
 # paste together markdown for message parse_mode
 telegram_message <- paste0(
   "Happy ", lubridate::wday(Sys.Date(), label = TRUE, abbr = FALSE), "! ", 
-  "Today's Tao te Tim comes from the episode with ", 
+  "Today's Tao of Tim comes from the episode with ", 
   "[", sample_show_link$article, "]", "(", sample_show_link$urls, ").", 
   " Here's the show link: ", 
   "[", sample_show_link$link_title, "]", "(", sample_show_link$link_url, ")")
